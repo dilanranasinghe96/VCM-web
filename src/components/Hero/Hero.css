@@ -1,0 +1,11 @@
+
+/* Hero Section */
+#hero {
+    position: relative;
+    z-index: 1;
+  }
+  
+  #hero .container {
+    position: relative;
+    z-index: 2;
+  }

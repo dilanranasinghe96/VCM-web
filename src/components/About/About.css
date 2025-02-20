@@ -1,0 +1,12 @@
+@keyframes bump {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .bumping-image {
+    animation: bump 1s infinite ease-in-out;
+  }

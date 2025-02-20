@@ -1,0 +1,79 @@
+/* Navbar */
+.navbar {
+    transition: all 0.3s ease;
+    z-index: 1000;
+  }
+  
+  /* .navbar.scrolled {
+    background: #fff !important;
+  } */
+  
+  .navbar-brand img {
+    transition:all 0.3s ease;
+  }
+  
+  .nav-link {
+    font-weight: 500;
+    position: relative;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #4361ee;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+  }
+  
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    width: 70%;
+  }
+  
+  /* Navbar Styling */
+  .custom-navbar {
+    transition: all 0.3s ease-in-out;
+    background: transparent;
+  }
+  
+  .custom-navbar {
+    background: rgba(0, 0, 0, 0.9);
+  }
+  
+  
+  
+  /* Offcanvas Navbar */
+  .offcanvas-custom {
+    background: rgba(0, 0, 0, 0.9) !important; /* Dark background with opacity */
+  }
+  
+  .offcanvas-header-custom {
+    background: rgba(0, 0, 0, 0.9) !important; /* Ensure the header is dark */
+    color: white !important;
+  }
+  
+  
+  
+  .offcanvas-body-custom .nav-link {
+    color: white !important;
+  } 
+  
+  /* Toggle Button */
+  .custom-toggler {
+    border-color: white !important; /* White border for toggle */
+    background-color: white!important; /* Black with opacity */
+  }
+  
+  
+  .custom-toggler:hover {
+    background-color: rgb(153, 153, 153) !important; /* Darker when hovered */
+  }
+  
+  /* Offcanvas Close Button */
+  .offcanvas-header-custom .btn-close {
+    filter: invert(1); /* Makes close button white */
+  }

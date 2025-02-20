@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css');
+
+:root {
+  --primary-color: #4361ee;
+  --secondary-color: #3f37c9;
+  --dark-color: #1e2a78;
+  --light-color: #f8f9fa;
+  --gray-color: #6c757d;
+  --success-color: #4CAF50;
+  --warning-color: #FFC107;
+  --danger-color: #DC3545;
+  --transition: all 0.3s ease;
+}
+
+
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #444;
+  overflow-x: hidden;
+  background-color: #fffcf4;
+  
+}
+
+/* General Styles */
+.section-title {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--primary-color);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section-subtitle {
+  color: var(--gray-color);
+  margin-bottom: 2rem;
+}
+
+.pt-120 {
+  padding-top: 120px;
+}
+
+.btn {
+  padding: 0.5rem 1.5rem;
+  transition: var(--transition);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+
+
+
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 991.98px) {
+  .navbar-nav .nav-link {
+    padding: 0.5rem 0;
+  }
+  .nav-link::after {
+    bottom: 0;
+  }
+
+  
+}
+
+@media (max-width: 767.98px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+  .team-img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .team-img {
+    height: 220px;
+  }
+}
