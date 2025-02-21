@@ -103,10 +103,10 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
-import client1 from '../../assets/client1.jpg';
-import client2 from '../../assets/client2.jpg';
-import client3 from '../../assets/client3.jpg';
-import client4 from '../../assets/client4.jpg';
+import client1 from '../../assets/SQ Birichina.png';
+import client2 from '../../assets/Timex garments.png';
+import client3 from '../../assets/Club text mark.png';
+import client4 from '../../assets/Marvel.jpeg';
 import "./Clients.css";
 
 const Clients = () => {
@@ -148,7 +148,7 @@ const Clients = () => {
       <Container>
         <div data-aos="fade-up" className="text-center mb-5">
           <h2 className="fw-bold mb-2">Our Trusted Partners</h2>
-          <p className="text-muted mb-0">Proud to work with these amazing organizations</p>
+          <p className="text-muted mb-0">Our Customers Are Our Greatest Success Story</p>
         </div>
         
         <Row className="justify-content-center g-4" data-aos="fade-up">

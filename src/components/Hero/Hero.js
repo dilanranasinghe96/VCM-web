@@ -25,14 +25,15 @@ const Hero = () => {
             </h1>
             
             <p data-aos="fade-up" data-aos-delay="600" className="lead mb-5">
-            Welcome! I'm excited to introduce our company and showcase how we can help your business thrive.
+            Welcome! We are excited to introduce our company and showcase how we can help your business thrive.
             </p>
             <div data-aos="fade-up" data-aos-delay="800">
-              <Button as={Link} to="/contact" variant="primary" size="lg" className="me-3 rounded-pill px-4">
-                Get Started
-              </Button>
-              <Button as={Link} to="/services" variant="outline-light" size="lg" className="rounded-pill px-4">
+              
+              <Button as={Link} to="/services" variant="outline-light" size="lg" className="rounded-pill px-4 me-3">
                 Our Services
+              </Button>
+              <Button as={Link} to="/contact" variant="primary" size="lg" className=" rounded-pill px-4">
+                Get Started
               </Button>
             </div>
           </Col>

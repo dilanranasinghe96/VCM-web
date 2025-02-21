@@ -77,3 +77,9 @@
   .offcanvas-header-custom .btn-close {
     filter: invert(1); /* Makes close button white */
   }
+
+
+  .offcanvas-custom .btn-close {
+    filter: invert(1); /* Makes the close icon white */
+    opacity: 1;
+  }

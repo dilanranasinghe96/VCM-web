@@ -17,14 +17,14 @@ const Footer = () => {
               Valuecraft Minds helps businesses transform and grow through strategic consulting and innovative technology solutions.
             </p>
             <div className="footer-social">
-              <a href="https://www.linkedin.com" className="me-3 social-icon-light" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/company/valuecraft-minds" className="me-3 social-icon-light" target="_blank" rel="noopener noreferrer">
                 <i className="bi bi-linkedin"></i>
               </a>
              
-              <a href="https://www.facebook.com/" className="me-3 social-icon-light" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/people/VCM/61572285525451/" className="me-3 social-icon-light" target="_blank" rel="noopener noreferrer">
                 <i className="bi bi-facebook"></i>
               </a>
-              <a href="https://www.facebook.com/" className="me-3 social-icon-light" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/+94773612339" className="me-3 social-icon-light" target="_blank" rel="noopener noreferrer">
                 <i className="bi bi-whatsapp"></i>
               </a>
             </div>
@@ -59,7 +59,7 @@ const Footer = () => {
             <ul className="list-unstyled footer-contact">
               <li className="d-flex mb-3">
                 <i className="bi bi-geo-alt me-2"></i>
-                <span>123 Business Avenue, Suite 500<br />Tech District, Innovation City 12345</span>
+                <span>No.77/B, Koswaththa, Rajagiriya,<br/> Sri Lanka.</span>
               </li>
               <li className="d-flex mb-3">
                 <i className="bi bi-envelope me-2"></i>
@@ -67,7 +67,7 @@ const Footer = () => {
               </li>
               <li className="d-flex mb-3">
                 <i className="bi bi-telephone me-2"></i>
-                <a href="tel:+11234567890" className="footer-link">+1 (123) 456-7890</a>
+                <a href="tel:+94773612339" className="footer-link">+94 77 361 2339</a>
               </li>
             </ul>
           </Col>
@@ -84,13 +84,13 @@ const Footer = () => {
           <Col md={6} className="text-md-end">
             <ul className="list-inline mb-0 footer-legal">
               <li className="list-inline-item me-4">
-                <Link to="/privacy" className="footer-link text-sm">Privacy Policy</Link>
+                <Link to="" className="footer-link text-sm">Privacy Policy</Link>
               </li>
               <li className="list-inline-item me-4">
-                <Link to="/terms" className="footer-link text-sm">Terms of Service</Link>
+                <Link to="" className="footer-link text-sm">Terms of Service</Link>
               </li>
               <li className="list-inline-item">
-                <Link to="/cookies" className="footer-link text-sm">Cookie Policy</Link>
+                <Link to="" className="footer-link text-sm">Cookie Policy</Link>
               </li>
             </ul>
           </Col>

@@ -8,5 +8,6 @@
   }
   
   .bumping-image {
-    animation: bump 1s infinite ease-in-out;
+    animation: bump 2s infinite ease-in-out;
   }
+

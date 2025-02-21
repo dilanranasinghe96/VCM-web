@@ -6,10 +6,10 @@ import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
 import About from './components/About/About';
 import Services from './components/Services/Services';
+import OurTeam from './components/Team/Team';
 import Clients from './components/Clients/Clients';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
-import Team from './components/Team/Team'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import WhatsAppButton from './components/WhatsAppButton/WhatsAppButton';
@@ -35,15 +35,16 @@ function App() {
         <Routes>
           <Route path="/" element={
             <>
-              <Hero />
-              <About />
-              <Services />
-              <Clients />
-              <Team/>
-              <Contact />
+              <section id="home"><Hero /></section>
+              <section id="about"><About full={true}/></section>
+              <section id="team"><OurTeam full={true}/></section>
+              <section id="services"><Services full={true}/></section>             
+              <section id="contact"><Contact full={true}/></section>
+
             </>
           } />
           <Route path="/about" element={<About full={true} />} />
+          <Route path="/ourteam" element={<OurTeam full={true} />} />
           <Route path="/services" element={<Services full={true} />} />
           <Route path="/clients" element={<Clients full={true} />} />
           <Route path="/contact" element={<Contact full={true} />} />
