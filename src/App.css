@@ -16,7 +16,7 @@
 
 
 
-body {
+body,html {
   font-family: 'Poppins', sans-serif;
   color: #444;
   overflow-x: hidden;

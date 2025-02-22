@@ -153,6 +153,7 @@ import React from 'react';
 import { Card, Col, Container, Row } from 'react-bootstrap';
 import digital from '../../assets/digital.png';
 import manufacture from '../../assets/manufacture.png';
+import './Services.css';
 
 const Services = ({ full = false }) => {
   const services = [
@@ -220,51 +221,55 @@ const Services = ({ full = false }) => {
 
   {/* Main Services Row */}
   <Row className="justify-content-center"> {/* Center the columns */}
-    {services.map((service, index) => (
-      <Col lg={5} md={6} key={index} className="mb-3 p-3"> {/* Reduced width */}
-        {/* Main Service Card */}
-        <div className="bg-light py-3 rounded shadow-sm" data-aos='fade-right' data-aos-delay="0.3s">
-          <Container >
-            <div className="d-flex align-items-center m-4">
-              <h3 className=" mb-0">{service.title}</h3>
-            </div>
-            <div className="text-center mb-4">
-              <img
-                src={service.imageSrc}
-                alt={service.title}
-                className="img-fluid rounded shadow-sm"
-                style={{ width: "90%", height: "auto" }} // Adjust image width
-              />
-            </div>
-            <p style={{ textAlign: "justify" }} className="m-4">
-              {service.description}
-            </p>
-          </Container>
-        </div>
+  {services.map((service, index) => (
+    <Col lg={5} md={6} key={index} className="mb-3 p-3"> {/* Reduced width */}
+      {/* Main Service Card */}
+      <Card className="bg-light border-0 shadow-sm service-card" data-aos='fade-right' data-aos-delay="0.3s">
+  <Card.Body>
+    <Container>
+      <div className="d-flex align-items-center mb-3">
+        <h3 className=" mb-0">{service.title}</h3>
+      </div>
+      <div className="text-center mb-4  ">
+        <Card.Img
+          src={service.imageSrc}
+          alt={service.title}
+          className="img-fluid rounded shadow-sm"
+         
+        />
+      </div>
+      <Card.Text style={{ textAlign: "justify" }} >
+        {service.description}
+      </Card.Text>
+    </Container>
+  </Card.Body>
+</Card>
 
-        {/* Sub-services */}
-        <div className="mt-4" data-aos='fade-left' data-aos-delay="0.6s">
-          <Row>
-            {service.subServices.map((subService, subIndex) => (
-              <Col key={subIndex} lg={12} md={6} className="mb-4">
-                <Card className="h-100 border-0 shadow-sm">
-                  <Card.Body>
-                    <div className="service-icon mb-3">
-                      <i className={`${subService.icon} text-primary fs-3`}></i>
-                    </div>
-                    <Card.Title className="h5 mb-3">
-                      {subService.title}
-                    </Card.Title>
-                    <Card.Text>{subService.description}</Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
-            ))}
-          </Row>
-        </div>
-      </Col>
-    ))}
-  </Row>
+
+      {/* Sub-services */}
+      <div className="mt-4 " data-aos='fade-left' data-aos-delay="0.6s">
+        <Row>
+          {service.subServices.map((subService, subIndex) => (
+            <Col key={subIndex} lg={12} md={6} className="mb-4">
+              <Card className="h-100 border-0 shadow-sm service-card ">
+                <Card.Body className='m-2'>
+                  <div className=" mb-3">
+                    <i className={`${subService.icon} text-primary fs-3`}></i>
+                  </div>
+                  <Card.Title className="h5 mb-3">
+                    {subService.title}  
+                  </Card.Title>
+                  <Card.Text style={{ textAlign: "justify" }}>{subService.description}</Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+      </div>
+    </Col>
+  ))}
+</Row>
+
   <Row >
             <Col>
               <h3 className="mb-4" data-aos="fade-up">Our Values</h3>
@@ -292,7 +297,7 @@ const Services = ({ full = false }) => {
                   }
                 ].map((value, index) => (
                   <Col md={6} lg={3} key={index} className="mb-4">
-                    <Card data-aos="zoom-in" data-aos-delay={300 + (index * 100)} className="h-100 border-0 shadow-sm">
+                    <Card data-aos="zoom-in" data-aos-delay={300 + (index * 100)} className="h-100 border-0 shadow-sm service-card">
                       <Card.Body className="text-center py-4">
                         <div className="display-4 text-primary mb-3">
                           <i className={value.icon}></i>

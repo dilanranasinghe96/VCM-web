@@ -148,19 +148,22 @@ const Navigation = () => {
       <Container fluid className="d-flex align-items-center">
   {/* Left-aligned brand */}
   <Navbar.Brand
-    as={Link}
-    to="/"
-    onClick={handleNavClick}
-    className="d-flex align-items-center ms-4"
-  >
-    <img
-      src={logo}
-      height="60"
-      className="d-inline-block align-top"
-      alt="Company Logo"
-    />
-    <h7 className=" text-white" style={{ marginTop: '40px' }}>Valuecraft Minds</h7>
-  </Navbar.Brand>
+  as={Link}
+  to="/"
+  onClick={handleNavClick}
+  className="d-flex align-items-center ms-4 nav-brand-custom"
+>
+  <img
+    src={logo}
+    height="50" /* Slightly reduced for better mobile fit */
+    className="d-inline-block align-top "
+    alt="Company Logo"
+  />
+<span className="text-white navbar-brand-text">Valuecraft Minds</span>
+
+
+</Navbar.Brand>
+
 
   {/* Navbar Toggle & Menu */}
   <Navbar.Toggle

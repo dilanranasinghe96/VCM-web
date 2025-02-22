@@ -137,7 +137,7 @@
 
 
 import React from 'react';
-import { Card, Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 import team1 from '../../assets/client1.jpg';
 import './Team.css';
 
@@ -164,15 +164,15 @@ const Team = ({ full = false }) => {
 
      
         <div className="mb-5">
-          {/* Main Service Section */}
-          <div className="py-5 mb-5 rounded">
+         
+          <div className="py-3 mb-5 rounded">
             <Container>
-              <Row className="align-items-center">
+              <Row className="">
                 
                 <Col lg={6}  data-aos="fade-right">
                       <div className="d-flex align-items-center m-4">
                   
-                  <h3 className="h2 mb-0">Mr.Udara Ranasinghe</h3>
+                  <h3 className=" mb-0">Mr.Udara Ranasinghe</h3>
                   
                   </div>
                   <h4 className='d-flex align-items-center m-4'>Founder & CEO</h4>

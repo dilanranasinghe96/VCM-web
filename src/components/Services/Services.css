@@ -1,15 +1,12 @@
 
 /* Services Section */
+  
 .service-card {
-    transition: var(--transition);
-    background: #fff;
-  }
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3) !important; 
+}
+
   
-  .service-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .service-icon {
-    font-size: 2.5rem;
-    color: var(--primary-color);
-  }

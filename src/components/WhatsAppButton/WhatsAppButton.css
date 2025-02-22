@@ -5,7 +5,7 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: #25d366;
+    background-color: #016c28;
     color: white;
     display: flex;
     align-items: center;
@@ -16,7 +16,7 @@
   }
   
   .whatsapp-button:hover {
-    background-color: #128c7e;
+    background-color: #128c14;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
     transform: translateY(-5px);
   }

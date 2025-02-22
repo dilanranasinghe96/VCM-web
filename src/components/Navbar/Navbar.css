@@ -63,16 +63,36 @@
   } 
   
   /* Toggle Button */
-  .custom-toggler {
-    border-color: white !important; /* White border for toggle */
-    background-color: white!important; /* Black with opacity */
-  }
+/* White Toggle Button */
+.custom-toggler {
+  border: none; /* Remove borders */
+  background-color: transparent !important; /* Transparent background */
+  color: white !important; /* White color */
   
+}
+
+/* Change Toggle Icon (3 lines) to White */
+.custom-toggler .navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+}
+
   
   .custom-toggler:hover {
-    background-color: rgb(153, 153, 153) !important; /* Darker when hovered */
+    filter: opacity(0.7); /* Change opacity on hover */
+    border: none; /* Remove borders */
   }
   
+/* Remove border on click (focus) */
+.custom-toggler:focus,
+.custom-toggler:active,
+.custom-toggler:focus-visible {
+  outline: none !important; 
+  box-shadow: none !important;
+  border: none !important;
+}
+
+
+
   /* Offcanvas Close Button */
   .offcanvas-header-custom .btn-close {
     filter: invert(1); /* Makes close button white */
@@ -83,3 +103,10 @@
     filter: invert(1); /* Makes the close icon white */
     opacity: 1;
   }
+
+  .navbar-brand-text {
+    margin-top: 33px; 
+    font-size: 1.1rem; 
+    white-space: nowrap; 
+  }
+  

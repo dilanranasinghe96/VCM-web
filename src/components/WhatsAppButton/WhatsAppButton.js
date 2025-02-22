@@ -12,7 +12,7 @@ const WhatsAppButton = () => {
       rel="noopener noreferrer"
       aria-label="Chat with us on WhatsApp"
     >
-      <i className="bi bi-whatsapp"></i>
+      <i className="bi bi-whatsapp" style={{ fontSize: "1.5rem" }}></i>
     </a>
   );
 };
