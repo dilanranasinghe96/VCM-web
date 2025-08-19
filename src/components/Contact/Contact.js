@@ -2,7 +2,7 @@ import emailjs from '@emailjs/browser';
 import React, { useState } from 'react';
 import { Alert, Button, Col, Container, Form, Row } from 'react-bootstrap';
 import './Contact.css';
-emailjs.init("dC6C0-V1vAuf3STfh");
+emailjs.init("yFO8mzknugOT70Ydm");
 
 const Contact = ({ full = false }) => {
   const [formData, setFormData] = useState({
@@ -43,10 +43,10 @@ const Contact = ({ full = false }) => {
       };
 
       await emailjs.send(
-        'service_pest6km', // Replace with your EmailJS service ID
-        'template_mbar8nb', // Replace with your EmailJS template ID
+        'service_tsoicep', // Replace with your EmailJS service ID
+        'template_ptm1bi9', // Replace with your EmailJS template ID
         templateParams,
-        'dC6C0-V1vAuf3STfh' // Replace with your EmailJS public key
+        'yFO8mzknugOT70Ydm' // Replace with your EmailJS public key
       );
 
       // Success handling
@@ -90,11 +90,7 @@ const Contact = ({ full = false }) => {
         </Row>
         
         <Row className="justify-content-center">
-        {showAlert && (
-            <Alert variant={alertVariant} onClose={() => setShowAlert(false)} dismissible>
-              {alertMessage}
-            </Alert>
-          )}
+        
           <Col lg={5} md={6} className="mb-4 mb-lg-0">
           
             <div data-aos="fade-up">
@@ -106,7 +102,8 @@ const Contact = ({ full = false }) => {
                   </div>
                   <div>
                     <h5 className="mb-1">Address</h5>
-                    <p className="mb-0">No.77/B, Koswaththa, Rajagiriya, Sri Lanka.</p>
+                    <p className="mb-0"> No: 31A/52, Galwarusawa Road,<br />
+                    Korathota, Kaduwela.</p>
                   </div>
                 </div>
                 
@@ -117,7 +114,7 @@ const Contact = ({ full = false }) => {
                   <div>
                     <h5 className="mb-1">Email</h5>
                     <p className="mb-0">
-                      <a href="mailto:info@valuecraftminds.com" className="text-decoration-none">info@valuecraftminds.com</a>
+                      <a href="mailto:udara@valuecraftminds.com" className="text-decoration-none">udara@valuecraftminds.com</a>
                     </p>
                   </div>
                 </div>

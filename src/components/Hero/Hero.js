@@ -1,10 +1,19 @@
 import React from 'react';
 import { Button, Col, Container, Row } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import heroImage from '../../assets/hero-image.jpg';
 import './Hero.css';
 
+
+
 const Hero = () => {
+  
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     
       <section id="hero" className="d-flex align-items-center" style={{
@@ -29,10 +38,10 @@ const Hero = () => {
             </p>
             <div data-aos="fade-up" data-aos-delay="800">
               
-              <Button as={Link} to="/services" variant="outline-light" size="lg" className="rounded-pill px-4 me-3">
+              <Button onClick={() => scrollToSection("services")} variant="outline-light" size="lg" className="rounded-pill px-4 me-3">
                 Our Services
               </Button>
-              <Button as={Link} to="/contact" variant="primary" size="lg" className=" rounded-pill px-4">
+              <Button onClick={() => scrollToSection("contact")} variant="primary" size="lg" className=" rounded-pill px-4">
                 Get Started
               </Button>
             </div>

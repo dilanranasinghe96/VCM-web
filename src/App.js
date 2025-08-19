@@ -7,7 +7,6 @@ import Hero from './components/Hero/Hero';
 import About from './components/About/About';
 import Services from './components/Services/Services';
 import OurTeam from './components/Team/Team';
-import Clients from './components/Clients/Clients';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import AOS from 'aos';
@@ -43,11 +42,6 @@ function App() {
 
             </>
           } />
-          <Route path="/about" element={<About full={true} />} />
-          <Route path="/ourteam" element={<OurTeam full={true} />} />
-          <Route path="/services" element={<Services full={true} />} />
-          <Route path="/clients" element={<Clients full={true} />} />
-          <Route path="/contact" element={<Contact full={true} />} />
         </Routes>
         <Footer />
         <WhatsAppButton />

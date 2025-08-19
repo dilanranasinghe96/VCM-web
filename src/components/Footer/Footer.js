@@ -30,40 +30,17 @@ const Footer = () => {
             </div>
           </Col>
           
-          {/* <Col lg={2} md={6} sm={6} className="mb-4 mb-lg-0">
-            <h5 className="mb-3 footer-heading">Quick Links</h5>
-            <ul className="list-unstyled footer-links">
-              <li className="mb-2"><Link to="/" className="footer-link">Home</Link></li>
-              <li className="mb-2"><Link to="/about" className="footer-link">About Us</Link></li>
-              <li className="mb-2"><Link to="/services" className="footer-link">Services</Link></li>
-              <li className="mb-2"><Link to="/projects" className="footer-link">Projects</Link></li>
-              <li className="mb-2"><Link to="/team" className="footer-link">Our Team</Link></li>
-              <li className="mb-2"><Link to="/contact" className="footer-link">Contact</Link></li>
-            </ul>
-          </Col> */}
-          
-          {/* <Col lg={2} md={6} sm={6} className="mb-4 mb-lg-0">
-            <h5 className="mb-3 footer-heading">Our Services</h5>
-            <ul className="list-unstyled footer-links">
-              <li className="mb-2"><Link to="/services" className="footer-link">Business Consulting</Link></li>
-              <li className="mb-2"><Link to="/services" className="footer-link">Web Development</Link></li>
-              <li className="mb-2"><Link to="/services" className="footer-link">Mobile App Development</Link></li>
-              <li className="mb-2"><Link to="/services" className="footer-link">ERP Systems</Link></li>
-              <li className="mb-2"><Link to="/services" className="footer-link">Software Solutions</Link></li>
-              <li className="mb-2"><Link to="/services" className="footer-link">IT Consulting</Link></li>
-            </ul>
-          </Col> */}
-          
           <Col lg={3} md={6} className="mb-4 mb-lg-0">
             <h5 className="mb-3 footer-heading">Contact Info</h5>
             <ul className="list-unstyled footer-contact">
               <li className="d-flex mb-3">
                 <i className="bi bi-geo-alt me-2"></i>
-                <span>No.77/B, Koswaththa, Rajagiriya,<br/> Sri Lanka.</span>
+                <span> No: 31A/52, Galwarusawa Road,<br />
+                Korathota, Kaduwela.</span>
               </li>
               <li className="d-flex mb-3">
                 <i className="bi bi-envelope me-2"></i>
-                <a href="mailto:info@valuecraftminds.com" className="footer-link">info@valuecraftminds.com</a>
+                <a href="mailto:udara@valuecraftminds.com" className="footer-link">udara@valuecraftminds.com</a>
               </li>
               <li className="d-flex mb-3">
                 <i className="bi bi-telephone me-2"></i>
